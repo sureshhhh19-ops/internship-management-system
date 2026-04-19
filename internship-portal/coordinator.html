@@ -1,0 +1,118 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Coordinator Dashboard</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+
+body{
+background: #f5f7fa;
+height:100vh;
+display:flex;
+flex-direction:column;
+align-items:center;
+}
+
+
+header{
+width:100%;
+background:white;
+padding:20px;
+text-align:center;
+box-shadow:0 3px 10px rgba(0,0,0,0.2);
+height:100px;
+position:relative;
+}
+
+
+header img{
+width:180px;
+position:absolute;
+left:20px;
+top:15px;
+}
+
+
+header h1{
+color:#333;
+font-size:30px;
+}
+
+.container{
+margin-top:50px;
+background:white;
+padding:40px;
+border-radius:12px;
+width:300px;
+box-shadow:0 10px 25px rgba(0,0,0,0.3);
+display:flex;
+flex-direction:column;
+align-items:center;
+}
+
+
+button{
+width:100%;
+padding:15px;
+margin:10px 0;
+border:none;
+border-radius:8px;
+background:#4facfe;
+color:white;
+font-size:16px;
+cursor:pointer;
+transition:0.3s;
+}
+
+
+button:hover{
+background:#0077ff;
+transform:translateY(-2px);
+}
+
+button:active{
+transform:scale(0.95);
+}
+</style>
+
+</head>
+
+<body>
+
+
+<header>
+<img src="https://learn.kletech.ac.in/theme/image.php/university/theme_university/1712427483/logo">
+<h1>Coordinator Dashboard</h1>
+</header>
+
+
+<div class="container">
+
+<button onclick="go1()">Add Internship</button>
+
+<button onclick="go2()">Monitor Applications</button>
+
+</div>
+
+
+<script>
+function go1(){
+window.location="addInternship.html";
+}
+
+function go2(){
+window.location="monitor.html";
+}
+</script>
+
+</body>
+</html>
